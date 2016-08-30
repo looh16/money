@@ -19,7 +19,7 @@ public class JPAConfiguration {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		
 		em.setDataSource(dataSource());
-		em.setPackagesToScan(new String[]{"org.money.models"});
+		em.setPackagesToScan(new String[]{"org.money.models","org.money.repository"});
 		
 		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		em.setJpaVendorAdapter(vendorAdapter);
@@ -33,7 +33,7 @@ public class JPAConfiguration {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/money");
 		dataSource.setUsername("root");
-		dataSource.setPassword("looh16-*-");
+		dataSource.setPassword("7635514");
 		
 		return dataSource;		
 	}
