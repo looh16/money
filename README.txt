@@ -1,4 +1,4 @@
 Membros do grupo:
   - Custodio Serafim Langa
   - Belton Mapute
-  - Abel Jaquissone
+  - Abel Ernesto da Joana Jaquissone
