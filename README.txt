@@ -4,3 +4,4 @@ Membros do grupo:
   - Belton Mapute
   - Abel Ernesto da Joana Jaquissone
   - Simone Mariano Lima
+  - Nelson Teresa Armindo Homo
