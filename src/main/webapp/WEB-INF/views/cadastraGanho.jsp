@@ -1,6 +1,22 @@
-<!DOCTYPE>
+<!doctype html>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib tagdir="/WEB-INF/tags" prefix="data"%>
+
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#datepicker-13" ).datepicker();
+            $( "#datepicker-13" ).datepicker("show");
+         });
+      </script>
+
+<!-- <link href="css/jquery.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
 
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,11 +33,11 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
-
+ -->
 <c:import url="header.jsp"></c:import>
 <div style="margin: 0 470px">
 	<body>
-	
+
 		<div class="panel panel-default">
 			<div class="panel-heading">Cadastro de ganho</div>
 			<div class="panel-body">
@@ -30,7 +46,9 @@
 					<div class="form-group">
 						<label for="inputEmail" class="control-label col-xs-2">Data</label>
 						<div class="col-xs-6">
-							<input type="text" class="form-control" id="inputEmail">
+							<data:campoData id="data" />
+							 <input type="text" id="datepicker-13">
+							<!-- 		<input type="text" class="form-control" id="inputEmail"> -->
 						</div>
 					</div>
 					<div class="form-group">
@@ -72,4 +90,26 @@
 		</div>
 		<c:import url="footer.jsp"></c:import>
 	</body>
-</div>
+</div> 
+
+<!-- <!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>jQuery UI Datepicker functionality</title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      Javascript
+      <script>
+         $(function() {
+            $( "#datepicker-13" ).datepicker();
+            $( "#datepicker-13" ).datepicker("show");
+         });
+      </script>
+   </head>
+   <body>
+      HTML 
+      <p>Enter Date: <input type="text" id="datepicker-13"></p>
+   </body>
+</html> -->
