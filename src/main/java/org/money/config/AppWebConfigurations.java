@@ -3,11 +3,15 @@ package org.money.config;
 import org.money.controllers.TesteController;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @EnableWebMvc 
-@ComponentScan(basePackageClasses={TesteController.class}) 
+@EnableSpringDataWebSupport
+@ComponentScan(basePackageClasses = {TesteController.class}) 
+@EnableJpaRepositories
 public class AppWebConfigurations {
 	
 	@Bean
